@@ -1,0 +1,231 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+/*导航栏*/
+header{
+    background-color: #333;
+    width: 100%;
+    min-width: 1263px;
+    height: 70px;
+}
+nav{
+    margin: 0 auto;
+    width: 1000px;
+}
+/*图标设置*/
+.logo{
+    float: left;
+}
+nav > ul{
+    position: relative;
+    text-align: center;
+    line-height: 70px;
+    left: 200px;
+}
+nav > ul > li{
+    float: left;
+    width: 120px;
+}
+/*设置每个标签属性*/
+nav > ul > li > a{
+    font-size: 24px;
+    display: block;
+    color: white;
+    margin: 0 10px;
+}
+/*鼠标悬挂a标签出现背景*/ 
+nav > ul > li >a:hover{
+    background: #000;
+    cursor: pointer;
+}
+/*banner设置*/
+#banner{
+    position: relative;
+    background: linear-gradient(to right bottom, rgba(0,0,0,0.7), rgba(0,0,0,0)), url("img/headline.jpg") no-repeat center;
+    width: 100%;
+    height: 300px;
+    min-width: 1263px;
+}
+.banner{
+    width: 1264px;
+    height: 300px;
+    margin: 0 auto;
+}
+hgroup{
+    padding: 100px 0 0 150px;
+}
+hgroup > h1{
+    font-size: 45px;
+    font-weight: bold;
+    color: #eee;
+    letter-spacing: 1px;
+}
+hgroup > p {
+    color: #eee;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+/*主内容*/
+.container{
+    margin: 30px auto;
+    width: 1263px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+article{
+    float: left;
+    width: 900px;
+}
+/*标题设置*/
+.scenery > h2{
+    border-bottom: 1px dashed #999;
+    font-size: 45px;
+    padding: 0 0 10px 0;
+    margin-bottom: 10px;
+    line-height: 50px;
+    color: #666;
+}
+/*景点图像*/
+.scenery > figure{
+    padding: 4px;
+    text-align: center;
+    width: 433px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin: 10px 3px 15px 0;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+.scenery > figure > img{
+    vertical-align: middle;
+}
+.scenery > figure > figcaption{
+    line-height: 1.5;
+    padding: 10px 0 10px 0;
+    font-size: 16px;
+}
+/*右侧推荐栏*/
+.sidebar{
+    float: right;
+    width: 340px;
+}
+.recommend{
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.recommend > h2 {
+    text-align: center;
+}
+.recommend > ul > li{
+    background-color: #eee;
+    height: 40px;
+    width: 100px;
+    display: inline-block;
+    margin: 5px 2px 7px 2px;
+    line-height: 35px;
+}
+.recommend > ul > li > a {
+    font-size: 16px;
+    color: #999;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+/*热门旅游*/
+.famous {
+    border: 1px solid #ccc;
+    border-bottom: 20px;
+    text-align: center;
+}
+.famous > figure{
+    display: inline-block;
+    padding: 5px;
+}
+.famous > figure > figcaption {
+    font-size: 16px;
+}
+/*旅游百宝箱*/
+.treasure{
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/*对每一个a标签进行添加图标*/
+.trea1{
+    background: #eee url(img/trea1.png) no-repeat 10px center;
+}
+.trea2{
+    background: #eee url(img/trea2.png) no-repeat 10px center;
+}
+.trea3{
+    background: #eee url(img/trea3.png) no-repeat 10px center;
+}
+.trea4{
+    background: #eee url(img/trea4.png) no-repeat 10px center;
+}
+.box{
+    margin: 10px 10px;
+}
+.box > a{
+    color: #999;
+    background-color: #ccc;
+    font-size: 16px;
+    line-height: 45px;
+    height: 45px;
+    width: 150px;
+    margin: 2px;
+    text-indent: 10px;
+    display: inline-block;
+}
+/*页脚设置*//*左边*/
+hr{
+    border: 1px dashed #333;
+    width: 90%;
+}
+footer{
+    background-color: #222;
+    overflow: hidden;
+}
+.top{
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+}
+h2{
+    color: #ccc;
+    font-weight: normal;
+}
+.left-cloumn{
+    float: left;
+    margin: 10px;
+}
+.left-cloumn > ul > li > a{
+    margin: 5px;
+    display: block;
+    color: gray;
+}
+/*中间*/
+.middle-cloumn{
+    float: left;
+    margin: 10px;
+}
+.middle-cloumn > ul > li > a{
+    margin: 5px;
+    color: gray;
+}
+/*右边*/
+.right-column{
+    float: left;
+    margin: 10px;
+}
+.right-column > ul > li > a{
+    margin: 5px;
+    color: gray;
+}

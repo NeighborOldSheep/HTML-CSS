@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NavBar -->
+    <nav class="navbar">
+        <h1 class="logo">ADVENTURE</h1>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Tours</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#" class="ctn">Contact</a></li>
+        </ul>
+        <img src="img/menu-btn.png" class="menu-btn">
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h2>Wxplore The Colorful World</h2>
+            <div class="line"></div>
+            <h1>A wonderful giff</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+
+    <!-- Events -->
+    <section class="events">
+        <div class="title">
+            <h1>Upcoming Event</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="img/img1.png" alt="">
+                <h4>Everest Camp Trek</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit suscipit odit fuga voluptas iure, esse atque non, a consequatur laborum accusantium praesentium perspiciatis pariatur dolor? Delectus debitis nesciunt quisquam consequatur?</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="img/img2.png" alt="">
+                <h4>Walking Holidays</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit suscipit odit fuga voluptas iure, esse atque non, a consequatur laborum accusantium praesentium perspiciatis pariatur dolor? Delectus debitis nesciunt quisquam consequatur?</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Explore -->
+    <section class="explore">
+        <div class="explore-content">
+            <h1>Explore World</h1>
+            <div class="line"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi impedit mollitia maiores adipisci temporibus sapiente blanditiis quae, voluptatem voluptas, ipsam quas optio. Doloremque voluptate necessitatibus natus consequuntur, consequatur aliquam nam?</p>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Tours -->
+    <section class="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>Upcoming tous & Destination</h1>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique eveniet omnis molestias ullam nihil sed voluptatibus exercitationem, impedit aut explicabo et ad aspernatur repellat nam est aliquid beatae, architecto praesentium.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="img/img3.png" alt="">
+                    <img src="img/img4.png" alt="">
+                    <img src="img/img5.png" alt="">
+                    <img src="img/img6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+        <p>Powered by Edlio 101 S 2ND ST, ALHAMBRA, CA 91801 PHONE: (626) 943-6900 FAX: (626) 308-2344 STAFF LOGIN</p>
+        <p>© 2021 EDLIO LLC. ALL RIGHTS RESERVED</p>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector(".menu-btn")
+        const navlinks = document.querySelector(".nav-links")
+
+        menuBtn.addEventListener("click", ()=>{
+            navlinks.classList.toggle("mobile-menu");
+        })
+    </script>
+</body>
+</html>

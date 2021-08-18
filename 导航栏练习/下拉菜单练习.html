@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下拉菜单</title>
+    <style>
+        /*定位下拉内容*/
+        .nav{
+            display: inline-block;
+            position: relative;
+        }
+        /*去掉a标签下划线*/
+        .nav a{
+            text-decoration: none;
+        }
+        /*设置一级菜单ul跟li*/
+        .nav ul, .nav li{
+            list-style: none;
+            float: left;
+            margin: 0;
+            padding: 0;
+            background-color: #4d4d4d;
+        }
+        /*设置二级菜单绝对位，并隐藏二级菜单*/
+        .nav > ul > li> ul{
+            position: absolute;
+            display: none;
+        }
+        /*设置一级菜单样式*/
+        .nav >ul > li > a{
+            color: white;
+            display: block;
+            padding: 10px 8px;
+        }
+        /*设置二级菜单li样式*/
+        .nav > ul > li > ul > li{
+            float: none;
+        }
+        /*设置二级菜单样式*/
+        .nav > ul > li > ul > li > a{
+            color: white;
+            display:block;
+            padding: 10px 8px;
+        }
+        /*当鼠标在一级菜单上，显示二级菜单*/
+        .nav > ul > li:hover > ul{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="">课后作业</a>
+                <ul>
+                    <li><a href="">C语言</a></li>
+                    <li><a href="">Java语言</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">签到</a>
+                <ul>
+                    <li><a href="">鱼币签到</a></li>
+                    <li><a href="">C币签到</a></li>
+                </ul>
+            </li>
+            <li><a href="">论坛</a></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>垂直导航栏</title>
+    <style>
+        .nav{
+            margin-top: 50px;
+            margin-left: 60px;
+        }
+        .menue{
+            overflow: auto; /*如果导航栏选项多，设置为auto可以实现滚动*/
+            padding: 0;
+            margin: 0;
+            background-color: #4d4d4d;
+            list-style-type: none;
+            width: 15%;
+            height: 100%;
+            position: fixed;
+        }
+        
+        .menue a{
+            display: block;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            padding: 15px 8px; 
+        }
+        .menue a:hover{
+            color: cornsilk;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul class="menue">
+            <li><a href="">活动</a></li>
+            <li><a href="">游戏</a></li>
+            <li><a href="">社团职员</a></li>
+            <li><a href="">社团介绍</a></li>
+            <li><a href="">关于我们</a></li>
+        </ul>
+    </div>
+</body>
+</html>

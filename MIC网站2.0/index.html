@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.ico">
+    <title>Mic Club</title>
+    <style>
+        /*设置导航栏容器*/
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            position: relative;
+            width: 10000px;
+            height: 700px;
+        }
+        .nav{
+            overflow: hidden;
+            position: absolute;
+            width: 200px;
+            height: 100%;
+        }
+        /*导航栏ul设置*/
+        .nav > ul{
+            overflow: hidden;
+            margin: 0;
+            width: 200px;
+            height: 100%;   
+            list-style-type: none;
+            position: fixed;
+            background-color: #4d4d4d;
+        }
+        /*导航栏内容设置*/
+        .nav > ul > li > a{
+            color: white;
+            display: block;
+            text-decoration: none;
+            padding: 30px;
+        }
+        #logo > a > img{
+            text-align: center;
+            width: 150px;
+            height: 150px;
+        }
+        /*右边面板设置*/
+        .right-panel{
+            position: relative;
+            height: 100%;
+            margin-left: 200px;
+   
+        }
+        #picture{
+            position: relative;
+            margin-left: 200px;
+            width: 24%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <ul>
+                <li id="logo"><a><img src="panda.png"></a></li>
+                <li><a href="">Game</a></li>
+                <li><a href="">Activity</a></li>
+                <li><a href="">Leadership</a></li>
+                <li><a href="">Contanct</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+        </div>
+        <div calss="right-panel">
+            <img id="picture" src="mic club.jpg">
+        </div>
+    </div>
+</body>
+</html>
